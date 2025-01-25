@@ -32,11 +32,11 @@ This repository contains outputs and resources from my internship project at Til
    ```
 2. **Install dependencies:**
    ```bash
-   pip install -r requirements.txt
+   python setup.py
    ```
 3. **Run the pipeline:**
    ```bash
-   python run_pipeline.py
+   python senteval_script_v3.py
    ```
 4. **View results:** Results will be available in the `results/` directory.
 

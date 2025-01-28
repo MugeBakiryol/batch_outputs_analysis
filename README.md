@@ -1,7 +1,7 @@
 # Batch Outputs Analysis: Probing Deep Learning Models with SentEval
 
 ## Overview
-This repository contains outputs and resources from my internship project at Tilburg University, where I investigated the linguistic properties encoded in sentence embeddings through probing tasks. The project focused on replicating the methodology outlined in *What You Can Cram into a Single Vector: Probing Sentence Embeddings for Linguistic Properties* by Conneau et al. (2018), while extending its applicability to modern encoder architectures.
+This repository contains resources from my internship project at Tilburg University, where I investigated the linguistic properties encoded in sentence embeddings through probing tasks. The project focused on replicating the methodology outlined in *What You Can Cram into a Single Vector: Probing Sentence Embeddings for Linguistic Properties* by Conneau et al. (2018), while extending its applicability to modern encoder architectures.
 
 ## Key Features
 - **Replication and Extension:** Replicated and built upon the probing task framework from Conneau et al. (2018) to evaluate linguistic properties such as syntax, semantics, and surface-level features.
@@ -19,16 +19,22 @@ This repository contains outputs and resources from my internship project at Til
   - **Gated CNN:** Excels at detecting hierarchical linguistic patterns through convolutional and gating mechanisms.
 
 ## Contents
-- `batch_outputs/`: Outputs generated from various probing tasks.
-- `scripts/`: Python scripts for running the experiments.
-- `results/`: Summarized performance metrics and analyses.
-- `docs/`: Documentation on probing tasks, methods, and findings.
+- `data/`: Directory contains probing task datasets from SentEval, which are used to evaluate linguistic properties in sentence embeddings.
+- `examples/`: Python script examples for running the experiments.
+
+Required Data
+
+To replicate the tasks, download the necessary datasets from the SentEval repository:
+
+https://github.com/facebookresearch/SentEval/tree/main/data
+
+Ensure the datasets are placed in the appropriate directory before running the experiments.
 
 ## How to Use
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/username/batch_outputs_analysis.git
-   cd batch_outputs_analysis
+   git clone https://github.com/facebookresearch/SentEval/tree/main/data
+   cd SentEval-main
    ```
 2. **Install dependencies:**
    ```bash
@@ -38,7 +44,7 @@ This repository contains outputs and resources from my internship project at Til
    ```bash
    python senteval_script_v3.py
    ```
-4. **View results:** Results will be available in the `results/` directory.
+4. **View results:**
 
 ## Research Background
 The primary goal of this internship was to evaluate linguistic representations using sentence embeddings and probing tasks. This project replicated Conneau et al. (2018)'s work and extended it by analyzing multiple encoder architectures, including BiLSTM and Gated CNN. Key findings include:
